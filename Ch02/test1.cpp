@@ -5,6 +5,6 @@ using namespace std;
 
 int main() {
 	cout << "여기는 test1";
-	
+	cout << "잘 되나?";
 	return 0;
 }
