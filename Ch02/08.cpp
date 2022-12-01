@@ -6,6 +6,7 @@ int main() {
 
 	string ans;
 	char name[100];
+	char te[100];
 	int max = 0;
 	cout << "5명의 이름을 ';'로 구분하여 입력하세요\n" << ">>";
 
