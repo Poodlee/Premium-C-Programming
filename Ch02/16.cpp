@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstring>
 #include <cctype>
+#include <wincrypt.h>
 
 using namespace std;
 
@@ -10,6 +11,7 @@ int main() {
 	char text[10001];
 	int count = 0;
 	int cnt[26] = { 0 };
+
 
 	cout << "영문 텍스트를 입력하세요. 히스토그램을 그립니다.\n" << "텍스트의 끝은 ; 입니다. 10000개까지 가능합니다.\n";
 	cout << "-----------------------------------------------------------\n\n";
@@ -24,7 +26,7 @@ int main() {
 	for (int i = 0; i < length; i++) {
 		if (text[i] != 0) {
 			for (int j = 0; j < 26; j++) {
-				if (text[i] == j + 'a') {  // int 65 = char 'A', by ASCII Code 
+				if (text[i] == j + 'a') {  // int 97 = char 'a', by ASCII Code 
 					cnt[j]++;
 				}
 			}
