@@ -81,6 +81,9 @@
     <ClCompile Include="OC_Exp.cpp">
       <Filter>헤더 파일</Filter>
     </ClCompile>
+    <ClCompile Include="05_revise.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OC_Exp.h">
