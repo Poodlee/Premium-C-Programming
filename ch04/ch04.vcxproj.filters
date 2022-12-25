@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="00.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OC_main.cpp">
+    <ClCompile Include="OC.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="01.cpp">
@@ -48,76 +45,20 @@
     <ClCompile Include="09.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="09_Oval.cpp">
+    <ClCompile Include="10.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="10_main.cpp">
+    <ClCompile Include="11.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11_main.cpp">
+    <ClCompile Include="12.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="12_main.cpp">
+    <ClCompile Include="13.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="12_Ram.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11_Box.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10_Sub.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10_Mul.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10_Add.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10_Div.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="OC_Exp.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="05_revise.cpp">
+    <ClCompile Include="14.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="VendingMachine.cpp">
-      <Filter>헤더 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="VendingMachine_main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="OC_Exp.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Oval.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Add.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Sub.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Mul.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Div.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Box.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Ram.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="VendingMachine.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
