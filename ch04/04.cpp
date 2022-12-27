@@ -22,9 +22,9 @@ void Sample::read() {
 
 void Sample::write() {
 	for (int i = 0; i < size; i++) {
-		cout << p[i] << ' ';
+		std::cout << p[i] << ' ';
 	}
-	cout << endl;
+	std::cout << endl;
 }
 
 int Sample::big() {
@@ -44,5 +44,8 @@ int main(void) {
 	Sample s(10);
 	s.read();
 	s.write();
-	cout << "가장 큰 수는 " << s.big() << endl;
+	std::cout << "가장 큰 수는 " << s.big() << endl;
+
+	int* p = new int [] {1, 2, 3, 4 };
+	std::cout << *(p+2);
 }
