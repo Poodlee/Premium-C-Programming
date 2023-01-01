@@ -20,7 +20,9 @@ Book::Book(const char* title, int price) {
 	strcpy(this->title, title);
 }
 void Book::set(const char* title, int price) {
-	
+	if (strlen(title) > strlen(this->title))
+		delete [] this->title;
+	this->title = new char[strlen(title) + 1];
 	strcpy(this->title, title);
 	this->price = price;
 }
