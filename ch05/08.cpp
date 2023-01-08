@@ -22,7 +22,6 @@ MyIntStack::MyIntStack(int size) {
 }
 MyIntStack::MyIntStack(const MyIntStack& s) {
 	int len = s.size;
-
 	this->p = new int[len];
 	this->size = len;
 	this->tos = s.tos;
