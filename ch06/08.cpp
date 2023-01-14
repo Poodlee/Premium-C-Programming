@@ -13,7 +13,7 @@ public:
 	static void put(string t, string in);
 	static void print(string t = "모든");
 };
-//static 멤버 변수 초기화
+//static 멤버 변수 초기화 필수임.
 int Trace::index = 0;
 string Trace::tag[MAX_NUMBER] = { " " };
 string Trace::info[MAX_NUMBER] = { " " };
@@ -48,7 +48,6 @@ void Trace::print(string t) {
 	}
 
 }
-
 
 int main() {
 	Trace::put("main()", "프로그램 시작합니다");
