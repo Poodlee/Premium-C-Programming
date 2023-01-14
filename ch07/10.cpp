@@ -25,8 +25,8 @@ public:
 		}
 		cout << endl;
 	}
-	Statistics& operator <<(int x) {
-		size++;
+	Statistics& operator <<(int x) { // 연속적인 << 처리를 위해서 return을 Statistics&로 설정한다.
+		size++; // 하나씩 들어오는 게 특징이다.
 		Statistics tmp(size);
 		for (int i = 0; i < size - 1; i++)
 			tmp.stat[i] = stat[i];

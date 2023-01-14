@@ -17,7 +17,7 @@ public:
 	void operator !() {
 		int count = 0;
 		int cnt[26] = { 0 };
-		int length = lyrics.length();
+		int length = lyrics.length(); // string : length(), char:strlen()
 
 		cout << lyrics << endl << endl;
 
@@ -36,7 +36,7 @@ public:
 		}
 		// the total number of alphabets & print
 		for (int i = 0; i < 26; i++) {
-			cout << (char)(i + 'a') << ": ";
+			cout << (char)(i + 'a') << ": "; // 만일 0인 것 표시안하려면 여기다 if문 추가.
 			for (int j = 0; j < cnt[i]; j++) {
 				count += cnt[j];
 				cout << "*";

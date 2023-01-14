@@ -12,11 +12,11 @@ public:
 		if (top == -1) return true;
 		else return false;
 	}
-	Stack& operator<<(int x) {
+	Stack& operator<<(int x) { //지속적인 연산을 위해 Stack& 참조 형식으로 리턴한다.
 		s[++top] = x;
 		return *this;
 	}
-	Stack& operator>>(int& x) {
+	Stack& operator>>(int& x) { //지속적인 연산을 위해 Stack& 참조 형식으로 리턴한다.
 		x = s[top--];
 		return *this;
 	}

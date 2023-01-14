@@ -10,7 +10,7 @@ private:
 	void sort(); // 정수 배열을 오름차순으로 정렬
 public:
 	SortedArray(); //p는 NULL로 size는 0으로 초기화
-	SortedArray(SortedArray& src); //복사 생성자
+	SortedArray(SortedArray& sor); //복사 생성자
 	SortedArray(int p[], int size); // 생성자. 정수 배열과 크기를 전달 받음
 	~SortedArray() { delete[] p;} // 소멸자
 	SortedArray operator + (SortedArray& op2); // 현재 배열에 op2 배열 추가
