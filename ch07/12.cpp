@@ -10,11 +10,11 @@ private:
 	void sort(); // 정수 배열을 오름차순으로 정렬
 public:
 	SortedArray(); //p는 NULL로 size는 0으로 초기화
-	SortedArray(SortedArray& sor); //복사 생성자
+	SortedArray(const SortedArray& sor); //복사 생성자
 	SortedArray(int p[], int size); // 생성자. 정수 배열과 크기를 전달 받음
 	~SortedArray() { delete[] p;} // 소멸자
 	SortedArray operator + (SortedArray& op2); // 현재 배열에 op2 배열 추가
-	SortedArray& operator = (const SortedArray& op2); // 현재 배열에 op2 배열 복사
+	//SortedArray& operator = (const SortedArray& op2); // 현재 배열에 op2 배열 복사
 	void show();
 };
 void SortedArray::sort() {
@@ -33,9 +33,9 @@ SortedArray::SortedArray() {
 	this->size = 0;
 	this->p = NULL;
 }
-SortedArray::SortedArray(SortedArray& sor) {
+SortedArray::SortedArray(const SortedArray& sor) {
 	this->size = sor.size;
-	this->p = new int[sor.size];
+	this->p = new int[size];
 	for (int i = 0; i < sor.size; i++) {
 		this->p[i] = sor.p[i];
 	}
@@ -59,9 +59,10 @@ SortedArray SortedArray::operator + (SortedArray& op2) { //더하고 정렬
 	for (int i = 0; i < op2.size; i++) {
 		tmp.p[ind++] = op2.p[i];
 	}
-	sort();
+	tmp.sort();
 	return tmp;
 }
+/*
 SortedArray& SortedArray::operator = (const SortedArray& op2) { // 대입
 	delete[] this->p; //기존의 것 삭제
 	this->size = op2.size;
@@ -72,8 +73,9 @@ SortedArray& SortedArray::operator = (const SortedArray& op2) { // 대입
 	sort();
 	return *this;
 }
+*/
 void SortedArray::show() {
-	cout << "벼열 출력 : ";
+	cout << "배열 출력 : ";
 	for (int i = 0; i < size; i++)
 		cout << p[i] << ' ';
 	cout << endl;
@@ -81,12 +83,13 @@ void SortedArray::show() {
 int main() {
 	int n[] = { 2,20,6 };
 	int m[] = { 10,7,8,30 };
-	SortedArray a(n, 3), b(m, 4), c;
+	SortedArray a(n, 3), b(m, 4);
 
-	c = a + b; // +, = 작성 필요
+	SortedArray c = a + b;
+	// c = a + b; // +, = 작성 필요
 	// + 연산자가 SortedArray 객체를 리턴하므로 복사 생성자 필요
-
 	a.show();
 	b.show();
 	c.show();
+	
 }

@@ -34,6 +34,7 @@ public:
 				}
 			}
 		}
+		
 		// the total number of alphabets & print
 		for (int i = 0; i < 26; i++) {
 			cout << (char)(i + 'a') << ": "; // 만일 0인 것 표시안하려면 여기다 if문 추가.
