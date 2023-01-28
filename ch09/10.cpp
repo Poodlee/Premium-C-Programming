@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// GraphicEditor 객체는 총관리하는 객체 - > class UI로 출력 구현. (static으로 -> 클래수 변수)
+// Shape의 파생 클래스 : Line, Circle, Rect 
+// 이떄 순서대로 진행하니까 포인터로 선언
 class Shape {
 	Shape* next;
 protected:
