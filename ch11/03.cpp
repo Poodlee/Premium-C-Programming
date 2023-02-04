@@ -3,10 +3,9 @@ using namespace std;
 
 int main() {
 	int ch;
-	
-	while ((ch == cin.get()) != EOF) {
+	while ((ch = cin.get()) != EOF) {
 		cout.put(ch);
-		if(ch=='\n')
+		if (ch == '\n')
 			cin.ignore(100, ';');
 	}
 	cout << endl;

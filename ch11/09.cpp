@@ -23,11 +23,14 @@ ostream& operator << (ostream& os, Phone ph) {
 
 istream& operator >> (istream& ins, Phone& ph) {
 	cout << "이름:";
-	getline(ins,ph.name);
+	ins >> ph.name;
+	ins.ignore(100,'\n');
 	cout << "전화번호:";
-	getline(ins,ph.telnum);
+	ins >> ph.telnum;
+	ins.ignore(100,'\n');
 	cout << "주소:";
-	getline(ins,ph.address);
+	ins >> ph.address;
+	ins.ignore(100,'\n');
 	return ins;
 }
 int main() {
