@@ -33,9 +33,9 @@ int main() {
 		string answer = v[random];
 
 		// 가림막
-		int block1, block2;
+		int block1, block2;				//젤 처음에 random으로 하다가 머리 아파서 rand로 변경
 		block1 = rand() % answer.length();
-		while (true) {
+		while (true) {				// if 문으로 계속 조건 걸었는데 그냥 틀릴때까지 while 돌리면 random성도 확보.
 			block2 = rand() % answer.length();
 			if (block1 != block2)
 				break;
@@ -45,7 +45,7 @@ int main() {
 
 		char answer_try,decide;
 		// 하나의 단어에 대한 게임
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {	// 또 새롭게 while해서 5번 하면 break 보다 횟수가 정해진 거면 for문이 훨씬 편함.
 			cout << temp << endl;
 			cin >> answer_try;
 			
